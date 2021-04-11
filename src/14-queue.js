@@ -12,16 +12,40 @@
  */
 
 class Queue {
+  // constructor() {
+  // this.head = null;
+  // this.tail = null;
+  // this.size = 0;
+  // }
+
   get size() {
     throw new Error('Not implemented');
+    // return this.size;
   }
 
   enqueue(/* element */) {
     throw new Error('Not implemented');
+    // const newElem = new ListNode(element);
+    // if (this.tail === null) {
+    //   this.tail = newElem;
+    // } else {
+    //   this.tail = newElem;
+    //   newElem.next = this.tail;
+    // }
+    // this.size += 1;
   }
 
   dequeue() {
     throw new Error('Not implemented');
+    // this.size -= 1;
+    // let item = this.tail;
+    // let newStart = item;
+    // while (item.next !== null) {
+    //   newStart = item;
+    //   item = item.next;
+    // }
+    // newStart.next = null;
+    // return item.value;
   }
 }
 
