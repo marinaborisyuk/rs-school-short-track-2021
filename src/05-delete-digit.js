@@ -10,7 +10,6 @@
  *
  */
 function deleteDigit(n) {
-  // throw new Error('Not implemented');
   const newStr = n.toString();
   const numberArr = [];
   for (let i = 0; i < newStr.length; i++) {

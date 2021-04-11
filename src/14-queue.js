@@ -1,4 +1,4 @@
-// const ListNode = require('../extensions/list-node');
+const ListNode = require('../extensions/list-node');
 /**
  * Implement the Queue with a given interface via linked list (use ListNode extension above).
  *
@@ -12,40 +12,41 @@
  */
 
 class Queue {
-  // constructor() {
-  // this.head = null;
-  // this.tail = null;
-  // this.size = 0;
-  // }
-
-  get size() {
-    throw new Error('Not implemented');
-    // return this.size;
+  constructor() {
+    this.queue = null;
+    this.size = 0;
   }
 
-  enqueue(/* element */) {
-    throw new Error('Not implemented');
-    // const newElem = new ListNode(element);
-    // if (this.tail === null) {
-    //   this.tail = newElem;
-    // } else {
-    //   this.tail = newElem;
-    //   newElem.next = this.tail;
-    // }
-    // this.size += 1;
+  get size() {
+    // throw new Error('Not implemented');
+    return this.size;
+  }
+
+  set size(i) {
+    this.size = i;
+  }
+
+  enqueue(element) {
+    // throw new Error('Not implemented');
+    if (this.size() !== 0) {
+      let tmp = this.queue;
+      while (tmp.next !== null) {
+        tmp = tmp.next;
+      }
+      tmp.next = new ListNode(element);
+      this.size(this.size--);
+    }
   }
 
   dequeue() {
-    throw new Error('Not implemented');
-    // this.size -= 1;
-    // let item = this.tail;
-    // let newStart = item;
-    // while (item.next !== null) {
-    //   newStart = item;
-    //   item = item.next;
-    // }
-    // newStart.next = null;
-    // return item.value;
+    // throw new Error('Not implemented');
+    if (this.size() !== 0) {
+      const tmp = this.queue;
+      this.queue = this.queue.next;
+      this.size(this.size--);
+      return tmp.element;
+    }
+    return false;
   }
 }
 

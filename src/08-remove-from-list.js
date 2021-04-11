@@ -16,13 +16,9 @@
   *   this.next = null;
   * }
  */
+const ListNode = require('../extensions/list-node');
 
 function removeKFromList(l, k) {
-  // throw new Error('Not implemented');
-  function ListNode(x) {
-    this.value = x;
-    this.next = null;
-  }
   const dummy = new ListNode();
   dummy.next = l;
   let current = dummy;

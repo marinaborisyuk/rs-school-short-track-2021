@@ -12,7 +12,6 @@
  *
  */
 function findIndex(array, value) {
-  // throw new Error('Not implemented');
   let start = 0;
   let end = array.length;
   let pivot = Math.floor((start + end) / 2);

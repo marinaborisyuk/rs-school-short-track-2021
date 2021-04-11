@@ -9,7 +9,6 @@
  *
  */
 function encodeLine(str) {
-  // throw new Error('Not implemented');
   const arr = str.split('');
   let count = 0;
   for (let i = 1; i < arr.length; i++) {

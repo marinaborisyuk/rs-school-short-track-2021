@@ -9,7 +9,6 @@
  *
  */
 function getEmailDomain(email) {
-  // throw new Error('Not implemented');
   let arr = [];
   for (let i = email.length - 1; i >= 0; i--) {
     if (email[i] !== '@') {

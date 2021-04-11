@@ -13,7 +13,6 @@
  *
  */
 function isMAC48Address(n) {
-  // throw new Error('Not implemented');
   return /^[A-F0-9-]{17}$/.test(n);
 }
 

@@ -11,7 +11,6 @@
  *
  */
 function getSumOfDigits(n) {
-  // throw new Error('Not implemented');
   let numberArr = n.toString().split('');
   let sum = 0;
   while (numberArr.length > 1) {

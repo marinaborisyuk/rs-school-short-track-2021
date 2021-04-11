@@ -16,17 +16,14 @@ class Stack {
   }
 
   push(element) {
-    // throw new Error('Not implemented');
     return this.stack.push(element);
   }
 
   pop() {
-    // throw new Error('Not implemented');
     return this.stack.length > 0 ? this.stack.pop() : undefined;
   }
 
   peek() {
-    // throw new Error('Not implemented');
     return this.stack[this.stack.length - 1];
   }
 }
