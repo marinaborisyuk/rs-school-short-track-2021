@@ -14,39 +14,37 @@ const ListNode = require('../extensions/list-node');
 class Queue {
   constructor() {
     this.queue = null;
-    this.size = 0;
+    // this.size = 0;
   }
 
-  get size() {
-    // throw new Error('Not implemented');
-    return this.size;
-  }
+  // get size() {
+  //   // throw new Error('Not implemented');
+  //   return this.size;
+  // }
 
-  set size(i) {
-    this.size = i;
-  }
+  // set size(i) {
+  //   this.size = i;
+  // }
 
   enqueue(element) {
     // throw new Error('Not implemented');
-    if (this.size() !== 0) {
+    if (this.queue === null) {
+      this.queue.next = new ListNode(element);
+    } else {
       let tmp = this.queue;
       while (tmp.next !== null) {
         tmp = tmp.next;
       }
       tmp.next = new ListNode(element);
-      this.size(this.size--);
     }
+    // this.size(this.size--);
   }
 
   dequeue() {
     // throw new Error('Not implemented');
-    if (this.size() !== 0) {
-      const tmp = this.queue;
-      this.queue = this.queue.next;
-      this.size(this.size--);
-      return tmp.element;
-    }
-    return false;
+    const tmp = this.queue;
+    this.queue = this.queue.next;
+    return tmp.element;
   }
 }
 
