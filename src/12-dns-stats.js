@@ -24,11 +24,12 @@ function getDNSStats(/* domains */) {
   throw new Error('Not implemented');
   // const arr = domains.join('.').split('.');
   // console.log(arr);
-
   // for (let i = 0; i < arr.length; i++) {
   //   let count = 1;
-  //   for (let j = 0; j < arr.lengthl j++) {
+  //   for (let j = 0; j < arr.length; j++) {
+  //     if ((arr[i] === arr[j]) && (i !== j)) {
 
+  //     }
   //   }
   // }
   // return 1;
